@@ -1,0 +1,334 @@
+From esoteric@oiva.sange.fi Tue Apr 15 01:23:23 2003
+Received: from localhost
+	([127.0.0.1] helo=oiva.sange.fi ident=esoteric)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 195CKb-000BoT-00; Tue, 15 Apr 2003 01:21:41 +0300
+Received: with LISTAR (v0.129a; list lang); Tue, 15 Apr 2003 01:21:27 +0300 (EEST)
+Received: from mx4.fuse.net ([216.68.1.133] helo=smtp02.fuse.net)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 195CKH-000Bnv-00
+	for lang@esoteric.sange.fi; Tue, 15 Apr 2003 01:21:22 +0300
+Received: from [192.168.1.3] ([216.196.161.75]) by smtp02.fuse.net
+          (InterMail vM.5.01.05.27 201-253-122-126-127-20021220) with ESMTP
+          id <20030414222118.NBBF21745.smtp02.fuse.net@[192.168.1.3]>
+          for <lang@esoteric.sange.fi>; Mon, 14 Apr 2003 18:21:18 -0400
+Subject: [lang] Homespring
+From: Jeff Binder <obvious@fuse.net>
+To: lang@esoteric.sange.fi
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 
+Date: 14 Apr 2003 18:20:16 -0400
+Message-Id: <1050358816.3891.128.camel@boxofstone>
+Mime-Version: 1.0
+X-Spam-Score: -6.3 (------)
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *195CKH-000Bnv-00*T5kXgwBEoSw*
+X-listar-version: Listar v0.129a
+Sender: lang-bounce@esoteric.sange.fi
+Errors-to: lang-bounce@esoteric.sange.fi
+X-original-sender: obvious@fuse.net
+Precedence: bulk
+Reply-to: lang@esoteric.sange.fi
+X-list: lang
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *195CKb-000BoT-00*TJcTFfVdYpA*
+
+Here's my first attempt at an esolang:
+
+http://home.fuse.net/obvious/hs.html
+
+It's kind of a perversion of data flow programming, and it also bears
+resemblance to Hunter. I don't yet know if it's Turing complete; if it
+isn't, I'll try to make it such. The interpreter (which is written in
+Guile Scheme) is a bit of a mess, but once the language is finalized
+I'll rewrite it (possibly in Perl so as to be more accessible).
+
+What do you think?
+
+-- 
+Jeff Binder $ cat|tr -d '\n'|perl >q.c;cc q.c
+eval($a=q{$_='eval($a=q{'.$a.'})';$0='\\\'x2;
+s/\\\/$0x4/ge;s/"/$0\\\"/g;s/\\$/$0\\$/g;prin
+t'main(){system("perl -e\\"'.$_.'\\">o");}'})'
+
+
+-- 
+To unsubscribe send a mail to listar@esoteric.sange.fi with a body of:
+unsubscribe lang	[if you receive these messages via lang]
+unsubscribe misc	[if you receive these messages via misc]
+
+
+From esoteric@oiva.sange.fi Tue Apr 15 12:39:16 2003
+Received: from localhost
+	([127.0.0.1] helo=oiva.sange.fi ident=esoteric)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 195Mtf-000JMM-00; Tue, 15 Apr 2003 12:38:35 +0300
+Received: with LISTAR (v0.129a; list lang); Tue, 15 Apr 2003 12:38:21 +0300 (EEST)
+Received: from [64.246.18.86] (helo=neuron.neuron1.com)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 195MtL-000JLj-00
+	for lang@esoteric.sange.fi; Tue, 15 Apr 2003 12:38:16 +0300
+Received: by neuron.neuron1.com (Postfix, from userid 33)
+	id 8E58536C1A3; Tue, 15 Apr 2003 10:38:13 +0100 (BST)
+To: lang@esoteric.sange.fi
+Subject: [lang] Re: Homespring
+From: Cal Henderson <cal@iamcal.com>
+MIME-Version: 1.0
+Content-Type: TEXT/plain; CHARSET=US-ASCII
+X-Mailer: WeaselMail <http://software.iamcal.com>
+Message-Id: <20030415093813.8E58536C1A3@neuron.neuron1.com>
+Date: Tue, 15 Apr 2003 10:38:13 +0100 (BST)
+X-Spam-Score: 0.0 (/)
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *195MtL-000JLj-00*qlNKK9qJ6.M*
+X-listar-version: Listar v0.129a
+Sender: lang-bounce@esoteric.sange.fi
+Errors-to: lang-bounce@esoteric.sange.fi
+X-original-sender: cal@iamcal.com
+Precedence: bulk
+Reply-to: lang@esoteric.sange.fi
+X-list: lang
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *195Mtf-000JMM-00*Q6oPMHkX8z2*
+
+At 23:24 GMT 14.04.03, Jeff Binder <obvious@fuse.net> wrote:
+: Here's my first attempt at an esolang:
+: 
+: http://home.fuse.net/obvious/hs.html
+: 
+: What do you think?
+
+it's great. i made a start at a perl interpreter. got as far as parsing and
+building the tree, though i'm hoping to have some more time to play with it
+pretty soon:
+
+http://www.iamcal.com/files/Language-Homespring-0.01.tar.gz
+
+
+--cal
+
+
+
+-- 
+To unsubscribe send a mail to listar@esoteric.sange.fi with a body of:
+unsubscribe lang	[if you receive these messages via lang]
+unsubscribe misc	[if you receive these messages via misc]
+
+
+From esoteric@oiva.sange.fi Tue Apr 15 20:29:22 2003
+Received: from localhost
+	([127.0.0.1] helo=oiva.sange.fi ident=esoteric)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 195UEc-000HPs-00; Tue, 15 Apr 2003 20:28:42 +0300
+Received: with LISTAR (v0.129a; list lang); Tue, 15 Apr 2003 20:28:28 +0300 (EEST)
+Received: from mx4.fuse.net ([216.68.1.133] helo=smtp02.fuse.net)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 195UEI-000HPH-00
+	for lang@esoteric.sange.fi; Tue, 15 Apr 2003 20:28:22 +0300
+Received: from [192.168.1.3] ([216.196.161.33]) by smtp02.fuse.net
+          (InterMail vM.5.01.05.27 201-253-122-126-127-20021220) with ESMTP
+          id <20030415172819.SISX21745.smtp02.fuse.net@[192.168.1.3]>
+          for <lang@esoteric.sange.fi>; Tue, 15 Apr 2003 13:28:19 -0400
+Subject: [lang] Re: Homespring
+From: Jeff Binder <obvious@fuse.net>
+To: lang@esoteric.sange.fi
+In-Reply-To: <20030415093813.8E58536C1A3@neuron.neuron1.com>
+References: <20030415093813.8E58536C1A3@neuron.neuron1.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 
+Date: 15 Apr 2003 13:27:23 -0400
+Message-Id: <1050427643.3933.5.camel@boxofstone>
+Mime-Version: 1.0
+X-Spam-Score: -32.4 (--------------------------------)
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *195UEI-000HPH-00*nqTBX6CrYcM*
+X-listar-version: Listar v0.129a
+Sender: lang-bounce@esoteric.sange.fi
+Errors-to: lang-bounce@esoteric.sange.fi
+X-original-sender: obvious@fuse.net
+Precedence: bulk
+Reply-to: lang@esoteric.sange.fi
+X-list: lang
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *195UEc-000HPs-00*6ak1mS0ZEhA*
+
+On Tue, 2003-04-15 at 05:38, Cal Henderson wrote:
+> At 23:24 GMT 14.04.03, Jeff Binder <obvious@fuse.net> wrote:
+> : Here's my first attempt at an esolang:
+> : 
+> : http://home.fuse.net/obvious/hs.html
+> : 
+> : What do you think?
+> 
+> it's great. i made a start at a perl interpreter. got as far as parsing and
+> building the tree, though i'm hoping to have some more time to play with it
+> pretty soon:
+> 
+> http://www.iamcal.com/files/Language-Homespring-0.01.tar.gz
+
+Great! I look foreward to seeing it.
+
+I just made a minor update to it, namely better handling of completely
+blank (null) programs. A null Homespring program should print the
+message 'In Homespring, the null program is not a quine.' and exit. No
+cheating!
+
+-- 
+Jeff Binder $ cat|tr -d '\n'|perl >q.c;cc q.c
+eval($a=q{$_='eval($a=q{'.$a.'})';$0='\\\'x2;
+s/\\\/$0x4/ge;s/"/$0\\\"/g;s/\\$/$0\\$/g;prin
+t'main(){system("perl -e\\"'.$_.'\\">o");}'})'
+
+
+-- 
+To unsubscribe send a mail to listar@esoteric.sange.fi with a body of:
+unsubscribe lang	[if you receive these messages via lang]
+unsubscribe misc	[if you receive these messages via misc]
+
+
+From esoteric@oiva.sange.fi Fri Apr 25 12:28:26 2003
+Received: from localhost
+	([127.0.0.1] helo=oiva.sange.fi ident=esoteric)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 198zUq-0004Ar-00; Fri, 25 Apr 2003 12:27:56 +0300
+Received: with LISTAR (v0.129a; list lang); Fri, 25 Apr 2003 12:27:42 +0300 (EEST)
+Received: from post.it.helsinki.fi ([128.214.205.24])
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 198zUW-0004AI-00
+	for lang@esoteric.sange.fi; Fri, 25 Apr 2003 12:27:36 +0300
+Received: from xandru.it.helsinki.fi (mail@xandru.it.helsinki.fi [128.214.38.174])
+	by post.it.helsinki.fi (8.12.9/8.12.2-SPAMmers-sod-off) with ESMTP id h3P9Ra5X017926
+	for <lang@esoteric.sange.fi>; Fri, 25 Apr 2003 12:27:36 +0300 (EEST)
+Received: from pkalliok by xandru.it.helsinki.fi with local (Exim 3.36 #1 (Debian))
+	id 198zQP-0006My-00
+	for <lang@esoteric.sange.fi>; Fri, 25 Apr 2003 12:23:21 +0300
+Date: Fri, 25 Apr 2003 12:23:21 +0300
+From: Panu Kalliokoski <pkalliok@cs.helsinki.fi>
+To: lang@esoteric.sange.fi
+Subject: [lang] Re: Homespring
+Message-ID: <20030425092320.GD24036@ling.helsinki.fi>
+Mail-Followup-To: lang@esoteric.sange.fi
+References: <1050358816.3891.128.camel@boxofstone>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <1050358816.3891.128.camel@boxofstone>
+User-Agent: Mutt/1.5.3i
+Sender: Panu Kalliokoski <pkalliok@xandru.it.helsinki.fi>
+X-Spam-Score: -29.3 (-----------------------------)
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *198zUW-0004AI-00*Ihs41E9kzAI*
+X-listar-version: Listar v0.129a
+Sender: lang-bounce@esoteric.sange.fi
+Errors-to: lang-bounce@esoteric.sange.fi
+X-original-sender: pkalliok@cs.helsinki.fi
+Precedence: bulk
+Reply-to: lang@esoteric.sange.fi
+X-list: lang
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *198zUq-0004Ar-00*7o19NIY/bjk*
+
+On Mon, Apr 14, 2003 at 06:20:16PM -0400, Jeff Binder wrote:
+> http://home.fuse.net/obvious/hs.html
+
+Seems very nice, though a little bit hard to learn because of the great
+number of different components.  This would make again another great
+visualisable program execution environment... :)
+
+-- 
+personal contact: atehwa@iki.fi, +35841 5323835
+work contact: pkalliok@ling.helsinki.fi, +35850 3678003
+kotisivu (henkkoht):	http://www.iki.fi/atehwa/
+homepage (technical):	http://sange.fi/~atehwa/
+
+-- 
+To unsubscribe send a mail to listar@esoteric.sange.fi with a body of:
+unsubscribe lang	[if you receive these messages via lang]
+unsubscribe misc	[if you receive these messages via misc]
+
+
+From esoteric@oiva.sange.fi Sun May 04 01:12:11 2003
+Received: from localhost
+	([127.0.0.1] helo=oiva.sange.fi ident=esoteric)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 19C5DD-000Lvh-00; Sun, 04 May 2003 01:10:31 +0300
+Received: with LISTAR (v0.129a; list lang); Sun, 04 May 2003 01:10:17 +0300 (EEST)
+Received: from bay7-f19.bay7.hotmail.com ([64.4.11.19] helo=hotmail.com)
+	by oiva.sange.fi with esmtp (Exim 4.12)
+	id 19C5Ct-000LtU-00
+	for lang@esoteric.sange.fi; Sun, 04 May 2003 01:10:11 +0300
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+	 Sat, 3 May 2003 15:09:38 -0700
+Received: from 12.208.170.128 by by7fd.bay7.hotmail.msn.com with HTTP;
+	Sat, 03 May 2003 22:09:38 GMT
+X-Originating-IP: [12.208.170.128]
+X-Originating-Email: [lmtbl@hotmail.com]
+From: "Tristan Parker" <lmtbl@hotmail.com>
+To: lang@esoteric.sange.fi
+Bcc: 
+Subject: [lang] Homespring
+Date: Sat, 03 May 2003 15:09:38 -0700
+Mime-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-ID: <BAY7-F19mtBHP14vigs00010cdb@hotmail.com>
+X-OriginalArrivalTime: 03 May 2003 22:09:38.0888 (UTC) FILETIME=[B07CFC80:01C311C0]
+X-Spam-Score: 0.0 (/)
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *19C5Ct-000LtU-00*GrmGYeXLzRY*
+X-listar-version: Listar v0.129a
+Sender: lang-bounce@esoteric.sange.fi
+Errors-to: lang-bounce@esoteric.sange.fi
+X-original-sender: lmtbl@hotmail.com
+Precedence: bulk
+Reply-to: lang@esoteric.sange.fi
+X-list: lang
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/) *19C5DD-000Lvh-00*BDeK0LvEwiM*
+
+I've been working for a while on Homespring, and it looks like if you beat 
+it viciously enough it might be Turing Complete. Standing firm in this 
+conviction, I have taken one of the first steps. Unfortunately, it's such a 
+little teeny tiny step that I don't even know if it was in the right 
+direction.
+
+Can anyone check out the beginnings of this Unary Adder and see if they can 
+make it work? The basic MO is "separate out all of the ones, and remove the 
+plus, then output the ones untill they are all output."
+
+                                        snowmelt
+                                       /
+universe                         marshy
+        \                       /
+         split            marshy              +
+              \          /                   /
+               evaporates                 net
+                         \               /
+                          upstream switch
+                                         \
+                                          youth fountain
+                                                        \
+                                                         bear
+                                                             \
+                                                              time
+                                                                  \
+                                                                   hydro 
+power
+                                                                             
+  \
+                                                                             
+   1
+
+universe split evaporates marshy marshy snowmelt    upstream. switch youth. 
+fountain
+bear time hydro. power 1
+
+
+>52*"moc.liamtoh@lbtml"> #, :# _v_ #: ,# <"lmtbl@hotmail.com"*25<
+^                        p*48">">"<"84*p                        ^
+
+
+
+
+_________________________________________________________________
+The new MSN 8: advanced junk mail protection and 2 months FREE*  
+http://join.msn.com/?page=features/junkmail
+
+
+-- 
+To unsubscribe send a mail to listar@esoteric.sange.fi with a body of:
+unsubscribe lang	[if you receive these messages via lang]
+unsubscribe misc	[if you receive these messages via misc]
+
+
