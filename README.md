@@ -16,5 +16,6 @@ The page has been offline since September 2003 and probably isn't coming back.
 ... time passes  
 2005-11-24 : Joe Neeman posts an updated [spec](http://xeny.net/Homespring) and [interpreter](https://github.com/jneem/homespring) in Ocaml  
 ... much time passes  
-2012-10-30 : Quin Kennedy releases a [Node.js interpreter](https://github.com/quinkennedy/Homespring)  
+2012-10-30 : Quin Kennedy releases a partial [Node.js interpreter](https://github.com/quinkennedy/Homespring)  
 2013-03-03 : Benito van der Zander releases [a tool called home-river](https://github.com/benibela/home-river) to express Homespring programs as a tree  
+2017-01-29 : Cal Henderson releases a full [Node.js interpreter](https://github.com/iamcal/homespring.js)
