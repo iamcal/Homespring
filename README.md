@@ -10,7 +10,7 @@ The page has been offline since September 2003 and probably isn't coming back.
 2003-04-14 : Jeff Binder posts Homespring to the [esolang mailing list](mailing-list), with a Guile Scheme interpreter  
 2003-04-15 : Cal Henderson posts a limited [Perl interpreter](https://github.com/iamcal/perl-Language-Homespring) to the mailing list  
 2003-04-15 : Jeff Binder updates the original interpreter to handle the null program (to make trivial qunies impossible)  
-2003-05-03 : Tristan Parker demonstrates a unary adder on the esolang mailing list, suggesting truing completeness  
+2003-05-03 : Tristan Parker demonstrates a unary adder on the esolang mailing list, suggesting turing completeness  
 2003-07-02 : Cal Henderson releases the final version (v0.04) of the Perl interpreter  
 2003-09-?? : Jeff's original page gets redirected from http://home.fuse.net/obvious/hs.html to http://www.rpi.edu/~bindej/hs.html, which  is never indexed by the wayback machine  
 ... time passes  
