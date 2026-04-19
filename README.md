@@ -18,5 +18,5 @@ The page has been offline since September 2003 and probably isn't coming back.
 ... much time passes  
 2012-10-30 : Quin Kennedy releases a partial [Node.js interpreter](https://github.com/quinkennedy/Homespring)  
 2013-03-03 : Benito van der Zander releases [a tool called home-river](https://github.com/benibela/home-river) to express Homespring programs as a tree  
-2017-01-29 : Cal Henderson releases a full [Node.js interpreter](https://github.com/iamcal/homespring.js)
-2018-05-30 : Martijn Arts releases a partial [JavaScript interpreter](https://github.com/martijnarts/homespring-js) with web-based visualizer
+2017-01-29 : Cal Henderson releases a full [Node.js interpreter](https://github.com/iamcal/homespring.js)  
+2018-05-30 : Martijn Arts releases a partial [JavaScript interpreter](https://github.com/martijnarts/homespring-js) with web-based visualizer  
